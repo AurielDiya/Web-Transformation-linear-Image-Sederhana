@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<title>Transformasi Linier Pada Gambar</title>
+</head>
+<style>
+    body {
+        margin-top: 120px;
+        font-family: sans-serif;
+        color: black;
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 1px;
+        background-color: #e0d9d979;
+    }
+
+    form {
+        width: 55%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-left: 23%;
+        margin-right: 20%;
+    }
+
+    button[type="submit"] {
+        background-color: lightblue;
+        color: black;
+        font-weight: bold;
+        padding: 8px 9px;
+        margin-top: 14px;
+        margin-right: 12px;
+        border: none;
+        cursor: pointer;
+        width: 130px;
+    }
+
+    button:hover {
+        opacity: 0.8;
+    }
+
+    input[type=file] {
+        width: 35%;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+	input[type=number] {
+        width: 35%;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    html {
+        background-color: cadetblue;
+    }
+</style>
+
+<body>
+	<br>
+	<h1>Transformasi Linier Pada Gambar</h1>
+	<form method="POST" action="transform.php" enctype="multipart/form-data">
+		<label>Unggah Gambar : </label>
+		<input type="file" name="image" accept="image/*"><br>
+		<button type="submit">Transformasi</button><br><br>
+	</form>
+</body>
+</html>
